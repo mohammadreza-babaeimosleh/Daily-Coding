@@ -1,4 +1,4 @@
-# 27. Remove Element
+# Remove Element
 
 **Difficulty:** Easy  
 **Topic Tags:** Array · Two Pointers
