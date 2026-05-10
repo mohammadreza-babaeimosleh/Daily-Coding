@@ -1,4 +1,4 @@
-# 121. Best Time to Buy and Sell Stock
+# Best Time to Buy and Sell Stock
 
 **Difficulty:** Easy  
 **Topic Tags:** Array · Dynamic Programming · Sliding Window
@@ -18,6 +18,7 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 ## Examples
 
 **Example 1:**
+
 ```
 Input:  prices = [7,1,5,3,6,4]
 Output: 5
@@ -26,6 +27,7 @@ Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6 
 ```
 
 **Example 2:**
+
 ```
 Input:  prices = [7,6,4,3,1]
 Output: 0
@@ -54,7 +56,7 @@ class Solution:
 
 ## Complexity Analysis
 
-| Approach | Time | Space |
-|---|---|---|
-| Brute force (all pairs) | O(n²) | O(1) |
-| One pass / sliding window ✅ | O(n) | O(1) |
+| Approach                     | Time  | Space |
+| ---------------------------- | ----- | ----- |
+| Brute force (all pairs)      | O(n²) | O(1)  |
+| One pass / sliding window ✅ | O(n)  | O(1)  |
