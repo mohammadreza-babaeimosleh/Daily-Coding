@@ -1,4 +1,4 @@
-# 45. Jump Game II
+# Jump Game II
 
 **Difficulty:** Medium  
 **Topic Tags:** Array · Dynamic Programming · Greedy
@@ -21,6 +21,7 @@ Return the **minimum number of jumps** to reach index `n - 1`. The test cases ar
 ## Examples
 
 **Example 1:**
+
 ```
 Input:  nums = [2,3,1,1,4]
 Output: 2
@@ -29,6 +30,7 @@ Explanation: The minimum number of jumps to reach the last index is 2.
 ```
 
 **Example 2:**
+
 ```
 Input:  nums = [2,3,0,1,4]
 Output: 2
@@ -57,14 +59,14 @@ class Solution:
 
 ## Complexity Analysis
 
-| Approach | Time | Space |
-|---|---|---|
-| Dynamic programming (BFS layers) | O(n²) | O(n) |
-| Greedy (track current/next boundary) ✅ | O(n) | O(1) |
-| Greedy (argmax of reachable next jump) ✅ | O(n) | O(1) |
+| Approach                                  | Time  | Space |
+| ----------------------------------------- | ----- | ----- |
+| Dynamic programming (BFS layers)          | O(n²) | O(n)  |
+| Greedy (track current/next boundary) ✅   | O(n)  | O(1)  |
+| Greedy (argmax of reachable next jump) ✅ | O(n)  | O(1)  |
 
 ---
 
 ## Note
 
-This is a follow-up to [LC 55 · Jump Game](../55-jump-game/question.md). There the question is *can* you reach the end; here it is *how few jumps* does it take. The greedy insight: at each step, scan all indices reachable from the current jump and pick the one that maximises the furthest reach for the next jump.
+This is a follow-up to [LC 55 · Jump Game](../55-jump-game/question.md). There the question is _can_ you reach the end; here it is _how few jumps_ does it take. The greedy insight: at each step, scan all indices reachable from the current jump and pick the one that maximises the furthest reach for the next jump.
